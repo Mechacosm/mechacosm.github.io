@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Scott Heron</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/swipebox.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=560">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1 class="title">
+				<a href="/">scott heron</a>
+			</h1>
+			<h2>
+				<a href="https://twitter.com/mechacosm" rel="external" target="_blank">twitter</a>
+			</h2>
+			<h2>
+				<a href="mailto:mechacosm@gmail.com">email</a>
+			</h2>
+			<h2>
+				<a href="/about">about</a>
+			</h2>
+			<h2>
+				<a href="/2D">2D</a>
+			</h2>
+			<h2>
+				<a href="/">3D</a>
+			</h2>
+		</nav>
+	</header>
+	<div class="content">
+		<a href="#" class="game-link" title="Organ Grinders" id="organgrinders">
+			<div class="game-background" style="background-image: url('/img/organgrinders.png');">
+			</div>
+			<div class="game-info">
+				<p>organ grinders</p>
+			</div>
+		</a>
+		<a href="#" class="game-link" title="Keepin&#x27; it Weird" id="keep-it-weird">
+			<div class="game-background" style="background-image: url('/img/keep-it-weird-thumb.png');">
+			</div>
+			<div class="game-info">
+				<p>keepin' it weird</p>
+			</div>
+		</a>
+		<a href="#" class="game-link" title="Dead Drop" id="dead-drop">
+			<div class="game-background" style="background-image: url('/img/dead-drop.png');">
+			</div>
+			<div class="game-info">
+				<p>dead drop</p>
+			</div>
+		</a>
+		<a href="#" class="game-link" title="Heartgate" id="heartgate">
+			<div class="game-background" style="background-image: url('/img/heartgate.png');">
+			</div>
+			<div class="game-info">
+				<p>heartgate</p>
+			</div>
+		</a>
+		<a href="#" class="game-link" title="It&#x27;s Pronounced Sandmen" id="sandmen">
+			<div class="game-background" style="background-image: url('/img/sandmen-idle.gif');">
+			</div>
+			<div class="game-info">
+				<p>Sharks versus Vending Machines</p>
+			</div>
+		</a>
+	</div>
+	<footer>
+		&copy;2018 Scott Heron
+	</footer>
+
+	<script src="/js/jquery-2.1.0.min.js"></script>
+	<script src="/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/* Basic Gallery */
+			$('.swipebox').swipebox();
+			/* Video */
+			$('.swipebox-video').swipebox();
+			/* Dynamic Gallery */
+			$('#organgrinders').click(function(e) {
+				e.preventDefault();
+				$.swipebox([{
+					href: '/img/organgrinders.png',
+					title: 'placeholder'
+				}, ]);
+			});
+			$('#keep-it-weird').click(function(e) {
+				e.preventDefault();
+				$.swipebox([{
+					href: '/img/keep-it-weird.png',
+					title: 'placeholder'
+				}, ]);
+			});
+			$('#dead-drop').click(function(e) {
+				e.preventDefault();
+				$.swipebox([{
+					href: '/img/dead-drop.png',
+					title: 'placeholder'
+				}, ]);
+			});
+			$('#heartgate').click(function(e) {
+				e.preventDefault();
+				$.swipebox([{
+					href: '/img/heartgate.png',
+					title: 'placeholder'
+				}, ]);
+			});
+			$('#sandmen').click(function(e) {
+				e.preventDefault();
+				$.swipebox([{
+						href: '/img/sandmen-idle.gif',
+						title: 'placeholder'
+					},
+					{
+						href: '/img/sandmen-jump.gif',
+						title: 'placeholder'
+					},
+					{
+						href: '/img/sandmen-run.gif',
+						title: 'placeholder'
+					},
+					{
+						href: '/img/sandmen-pant.gif',
+						title: 'placeholder'
+					},
+					{
+						href: '/img/sandmen-punch.gif',
+						title: 'placeholder'
+					},
+					{
+						href: '/img/sandmen-wall.gif',
+						title: 'placeholder'
+					},
+				]);
+			});
+		});
+	</script>
+</body>
+
+</html>
